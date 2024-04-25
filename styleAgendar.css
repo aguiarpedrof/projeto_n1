@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#menu-horizontal-agendar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu-horizontal-agendar ul {
+    list-style: none;
+    /*tira os marcadores*/
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    /*alinhar os elementos na direita*/                                                                   
+    padding: 0, 5rem;
+    position: fixed;
+}
+
+#menu-horizontal-agendar ul li {
+    display: inline-block;
+    /*ficar em uma linha (e nao colunas)*/
+    font-style: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#menu-horizontal-agendar ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    /*tira o sublinhado*/
+    padding: 10px;
+    display: inline-block;
+    /*cria um bloco com o padding informado*/
+    transition: 1, 5s;
+    /* efeito de fade combinado com o hover */
+
+}
+
+#menu-horizontal-agendar ul li a:hover {
+    background-color: lightslategray;
+    opacity: 0.6;
+    /*opcional */
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+        sans-serif;
+    background-color: #f50046;
+    text-align: center;
+    border-color: #fff;
+    padding: 1rem;
+    padding-top: 3rem;
+
+
+}
+
+#paragrafo1 {
+    margin: 10px;
+}
+
+#dadosPContato {
+    margin-left: 20px;
+}
+
+#divDivOpcoes1 {
+    text-align: center;
+}
+
+#dados {
+
+    text-align: center;
+    padding: 1rem;
+}
+
+#div2 {
+    padding-top: 10px;
+}
+
+#div3 {
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.servico {
+    /* padding-top: 10px; */
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+#buttonEnviar {
+    margin-left: 20px;
+}
+
+#buttonLimpar {
+    margin-left: 20px;
+}
+
+fieldset {
+    padding: 2rem;
+}
+
+#recibo {
+    text-align: center;
+    padding: 1rem;
+    
+}
+#flex-conteiner{
+  
+    flex-direction: column;
+    text-align: justify;
+}
+#agendamento{
+    font-weight: 100;
+}

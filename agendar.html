@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento</title>
+  <link rel="stylesheet" href="styleAgendar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <form action="#" method="get" target="_blank" autocomplete="off">
+    <nav id="menu-horizontal-agendar">
+      <ul>
+        <li>
+          <a href="index.html" style="color: rgb(255, 255, 255)">Quem somos</a>
+        </li>
+        <li>
+          <a href="https://www.google.com.br/maps/place/Universidade+Federal+de+Itajub%C3%A1+-+UNIFEI+-+Campus+Theodomiro+Carneiro+Santiago/@-19.6733641,-43.2150497,17z/data=!3m1!4b1!4m6!3m5!1s0xa5a0d5ee5ffa5f:0x492daa791fcc7f52!8m2!3d-19.6733641!4d-43.2124748!16s%2Fg%2F1q5gppdsn?entry=ttu"
+            style="color: white">Local</a>
+        </li>
+        <li><a href="agendar.html" style="color: white">Agendar</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>AGENDAMENTO</h2>
+
+      <p id="dados">Informe seus dados</p>
+      <fieldset>
+        <!-- <legend>Descrição do grupo</legend> -->
+        <p id="paragrafo1"><b>Dados para contato:</b>  </p>
+        <div id="dadosPContato">
+          <div id="div1">
+            <label for="nameCli">Nome: </label>
+            <input type="text" id="nameCli" name="txtNomeCli" placeholder="Nome" required />
+          </div>
+
+          <div id="div2">
+            <label for="mailCli">Email: </label>
+            <input type="email" id="emailCli" name="txtMailCli" placeholder="E-Mail" />
+          </div>
+
+          <div id="div2">
+            <label for="dataCli">Data: </label>
+            <input type="datetime-local" id="dataCli" name="txtDataCli" placeholder="Data" />
+          </div>
+          
+        </div>
+
+        <div id="div3">
+          <label for="optCli"><b>Serviços: </b>  </label>
+
+          <div id="DivOpcoes1">
+            <div id="div4" class="servico">
+              <label for="optCorte">Corte R$ 25,00</label>
+              <input type="checkbox" id="optCli" name="chkOptCli" nochecked />
+            </div>
+
+            <div id="div5" class="servico">
+              <label for="optCorte">Corte + Sobrancelha R$ 30,00  </label>
+              <input type="checkbox" id="optCorteMs" name="corteMs" nochecked />
+            </div>
+
+            <div id="div6" class="servico">
+              <label for="optBarba">Barba R$ 20,00 </label>
+              <input type="checkbox" id="optBarba" name="Barba" nochecked />
+            </div>
+
+            <div id="div8" class="servico">
+              <label for="optCBS">Corte + Sobrancelha + Barba R$ 50,00</label>
+              <input type="checkbox" id="optCorteBS" name="corteBS" nochecked />
+            </div>
+          </div>
+        </div>
+
+        <div style="display: block; padding-top: 10px; padding-right: 10px">
+          <button  onclick="Enviar()" id="buttonEnviar" type="button">
+            Enviar
+          </button>
+          <button id="buttonLimpar" type="reset">Limpar campos</button>
+        </div>
+      </fieldset>
+    </section>
+  </form>
+  <br />
+  <fieldset id="flex-conteiner">
+    <div id="agendamento">
+
+      <h1 id="recibo">AGENDAMENTO</h1>
+      
+      <h1 id="nomeUsuario">Nome:</h1>
+      <h1 id="emailUsuario">Email:</h1>
+      <h1 id="dataUsuario">Data:</h1>
+      <h1 id="servicoUsuario">Serviço:</h1>
+
+    </div>
+  </fieldset>
+</body>
+
+</html>
